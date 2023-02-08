@@ -1,18 +1,11 @@
-# Puede tener cualquier nombre
-variable "ami_id"{
-  default=""
-  description="AMI ID"
-  # type= string | map | list
+variable "bucket_name"{
+  default = "backend-terraform-platzi"
 }
-variable "instance_type"{
-  
-}
-variable "tags"{
-  
-}
-variable "sg_name"{
 
+variable "acl"{
+  default = "private"
 }
-variable "ingress_rules"{
-  
+
+variable "tags"{
+  default = {Environment = "Dev", CreateBy = "Terraform"}
 }
